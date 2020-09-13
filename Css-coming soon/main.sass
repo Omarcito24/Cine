@@ -1,0 +1,137 @@
+@import _basico
+@import _variables
+@import _footer
+@import _header
+@import _section
+@import _columnas
+
+$smartphone: 480px
+$tablet: 723px
+$desktop: 1024px
+
+$cambio-1: 858px
+$cambio-2: 749px
+$cambio-3: 677px
+$cambio-4: 530px
+
+@media screen and (max-width: $desktop) and (min-width: $tablet)
+    .menu-list
+        li 
+            background: red
+            &:hover
+                opacity: .43
+                transition-duration: .80s
+
+@media screen and (max-width: $tablet) and (min-width: $smartphone)
+    .menu-list
+        li
+            background: green
+            a 
+                font-size: .90em
+
+    .columns-info
+        display: grid
+        grid-template-columns: 1fr 1fr
+
+
+@media screen and ( max-width: $smartphone)
+    .menu-list
+        li 
+            a 
+                font-size: .63em
+                font-weight: 500
+                text-align: center
+
+    .columns-info
+        display: grid
+        grid-template-columns: 1fr
+        margin-top: 0
+
+    footer 
+        height: 200px
+        h2 
+            font-size: 2em
+            
+.enlaces
+        display: grid
+        margin-top: 0em
+        grid-template-columns: 1fr 1fr
+        a 
+            padding-bottom: 1em
+            padding-top: 2em
+            display: flex
+            justify-content: center
+
+@media screen and ( max-width: $cambio-1)
+    .columns-info
+        display: grid
+        grid-template-columns: 1fr 1fr
+
+@media screen and (max-width: $cambio-2) and (min-width: $tablet)
+    .menu-list
+        li 
+            a
+                font-size: .90em
+ 
+@media screen and ( max-width: $cambio-3) and (min-width: $cambio-4)
+    .menu-list
+        li 
+            a 
+                font-size: .70em
+
+@media screen and ( max-width: $cambio-4) and (min-width: $smartphone)
+    .menu-list
+        li 
+            a
+                font-size: .60em
+    
+    
+
+    
+    
+
+    
+        
+        
+           
+  
+
+
+
+
+            
+
+
+
+    
+
+
+            
+    
+
+
+    
+
+
+        
+
+
+
+
+
+    
+        
+       
+            
+            
+  
+       
+
+    
+   
+
+
+
+    
+
+
